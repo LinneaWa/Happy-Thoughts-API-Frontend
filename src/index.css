@@ -18,6 +18,7 @@ code {
 
 .innerWrapper {
   width: 50%;
+  min-width: 400px;
 }
 
 .messageForm {
@@ -32,29 +33,35 @@ code {
   box-shadow: 7px 7px;
 }
 
+.buttonAndCounter {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
 .counter {
   font-family: 'Noto Sans Mono', monospace;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .formBtn {
   font-family: 'Noto Sans Mono', monospace;
-  font-size: 16px;
+  font-size: 14px;
   background-color: rgb(241, 198, 198);
   border: none;
   margin-top: 10px;
   border-radius: 20px;
-  padding: 10px;
+  padding: 5px;
 }
 
 .formBtnDisabled {
   font-family: 'Noto Sans Mono', monospace;
-  font-size: 16px;
+  font-size: 14px;
   background-color: rgb(241, 198, 198);
   border: none;
   margin-top: 10px;
   border-radius: 20px;
-  padding: 10px;
+  padding: 5px;
 }
 
 .formBtn:hover {
