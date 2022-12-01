@@ -59,7 +59,7 @@ export const App = () => {
     fetch(`https://project-happy-thoughts-api-4ooljqxwgq-lz.a.run.app/messages/${_id}/hearts`, options)
       .then((res) => res.json())
       .then(() => fetchMessages())
-      .finally(() => setNewMessage());
+      .catch((err) => console.error(err));
   }
 
   return (
