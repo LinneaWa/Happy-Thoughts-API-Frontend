@@ -1,5 +1,6 @@
 import React from 'react';
 import { SubmitButton } from './SubmitButton';
+import { Counter } from './Counter';
 
 const MessageForm = ({ newMessage, onNewMessageChange, onFormSubmit }) => {
   return (
@@ -8,7 +9,7 @@ const MessageForm = ({ newMessage, onNewMessageChange, onFormSubmit }) => {
       <textarea className="textArea" value={newMessage} placeholder="Type a minimum of 5 characters." maxLength="140" onChange={onNewMessageChange} />
       <div className="buttonAndCounter">
         <SubmitButton newMessage={newMessage} />
-        <p className="counter"> {140 - newMessage.length}/140 </p>
+        <Counter newMessage={newMessage} />
       </div>
     </form>
   )

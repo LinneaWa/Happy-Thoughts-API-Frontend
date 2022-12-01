@@ -7,3 +7,4 @@ export const SubmitButton = ({ newMessage }) => {
     <button className="formBtn" type="submit">💌 Send Happy Thought! 💌</button>
   );
 };
+
