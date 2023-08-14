@@ -9,7 +9,7 @@ export const App = () => {
 
   const fetchMessages = () => {
     setLoading(true);
-    fetch('https://project-happy-thoughts-api-4ooljqxwgq-lz.a.run.app/messages')
+    fetch('https://happy-thoughts-api-xuwa.onrender.com/messages')
       .then((res) => res.json())
       .then((data) => setMessageList(data))
       .catch((error) => console.error(error))
@@ -42,7 +42,7 @@ export const App = () => {
       })
     }
 
-    fetch('https://project-happy-thoughts-api-4ooljqxwgq-lz.a.run.app/messages', options)
+    fetch('https://happy-thoughts-api-xuwa.onrender.com/messages', options)
       .then((res) => res.json())
       .then(() => fetchMessages())
       .finally(() => handleFormCleanup());
@@ -56,7 +56,7 @@ export const App = () => {
       }
     }
 
-    fetch(`https://project-happy-thoughts-api-4ooljqxwgq-lz.a.run.app/messages/${_id}/hearts`, options)
+    fetch(`https://happy-thoughts-api-xuwa.onrender.com/messages/${_id}/hearts`, options)
       .then((res) => res.json())
       .then(() => fetchMessages())
       .catch((err) => console.error(err));
